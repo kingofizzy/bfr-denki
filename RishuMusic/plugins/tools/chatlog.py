@@ -22,8 +22,8 @@ from pyrogram.enums import ParseMode
 
 
 photo = [
-    "https://telegra.ph/file/253891e197cf5188c68b3.jpg",
-    "https://telegra.ph/file/c32bcb41f9c3212bcf5bb.jpg",
+    "https://envs.sh/sE4.jpg",
+    "https://envs.sh/sE4.jpg",
 ]
 
 
@@ -44,7 +44,7 @@ async def join_watcher(_, message):
                 f"◎ ᴄʜᴀᴛ ʟɪɴᴋ ▸ [ᴄʟɪᴄᴋ]({link})\n"
                 f"◎ ɢʀᴏᴜᴘ ᴍᴇᴍʙᴇʀs ▸ {count}\n"
                 f"◎ ᴀᴅᴅᴇᴅ ʙʏ ▸ {message.from_user.mention}\n"
-				f"⦿───────────────────⦿"
+		f"⦿───────────────────⦿"
             )
             await app.send_photo(LOG_GROUP_ID, photo=random.choice(photo), caption=msg, reply_markup=InlineKeyboardMarkup([
             [InlineKeyboardButton(f"𝗦𝗘𝗘 𝗚𝗥𝗢𝗨𝗣", url=f"{link}")]
