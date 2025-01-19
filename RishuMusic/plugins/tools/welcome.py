@@ -81,13 +81,13 @@ def welcomepic(pic, user, chatname, id, uname, brightness_factor=1.3):
     background = Image.open("RishuMusic/assets/wel.png")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp, brightness_factor=brightness_factor) 
-    pfp = pfp.resize((335, 335))
+    pfp = pfp.resize((350, 350))
     draw = ImageDraw.Draw(background)
     font = ImageFont.truetype('RishuMusic/assets/font.ttf', size=0)
     welcome_font = ImageFont.truetype('RishuMusic/assets/font.ttf', size=0)
     
 
-    draw.text((630, 450), f'ID: {id}', fill=(255, 255, 255), font=font)
+    draw.text((640, 450), f'ID: {id}', fill=(255, 255, 255), font=font)
 
     pfp_position = (820, 190)
     background.paste(pfp, pfp_position, pfp)
