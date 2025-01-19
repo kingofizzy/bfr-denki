@@ -9,9 +9,9 @@ from pyrogram.types import (
     Message,
 )
 
-from AviaxMusic import app
-from AviaxMusic.core.mongo import mongodb
-from AviaxMusic.misc import SUDOERS
+from RishuMusic import app
+from RishuMusic.core.mongo import mongodb
+from RishuMusic.misc import SUDOERS
 
 approvaldb = mongodb.autoapprove
 
