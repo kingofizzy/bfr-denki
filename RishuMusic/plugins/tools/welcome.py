@@ -81,7 +81,7 @@ def welcomepic(pic, user, chatname, id, uname, brightness_factor=1.3):
     background = Image.open("RishuMusic/assets/wel.png")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp, brightness_factor=brightness_factor) 
-    pfp = pfp.resize((600, 600))
+    pfp = pfp.resize((400, 400))
     draw = ImageDraw.Draw(background)
     font = ImageFont.truetype('RishuMusic/assets/font.ttf', size=60)
     welcome_font = ImageFont.truetype('RishuMusic/assets/font.ttf', size=60)
